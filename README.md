@@ -1,7 +1,7 @@
 # Weather Application 🌦️
 
 A simple and elegant weather application built with Python using the `tkinter` and `ttkbootstrap` libraries. This application allows users to search for the current weather of any city, displaying details such as temperature, weather description, and an icon representing the weather conditions.
-
+![alt text](image.png)
 ## Features
 - **Real-time Weather Information**: Fetches and displays up-to-date weather information for any city using the OpenWeatherMap API.
 - **User-Friendly Interface**: Designed with a modern and attractive light theme using `ttkbootstrap` for a clean and responsive UI.
