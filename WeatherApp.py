@@ -4,6 +4,12 @@ from tkinter import messagebox
 from PIL import Image,ImageTk
 import ttkbootstrap
 
+def search():
+    city = city_entry.get()
+    result = get_weather(city)
+    if result is None:
+        return 
+
 root = ttkbootstrap.window(themname="morph")
 root.title("Weather App")
 root.geometry("400x400")
@@ -20,3 +26,10 @@ location_label.pack(pady=20)
 icon_label =tk.Label(root)
 icon_label.pack()
 
+temperature_label =tk.Label(root, font="Helvetica, 20")
+temperature_label.pack()
+
+description_label =tk.Label(root, font="Helvetica, 20")
+description_label.pack()
+
+root.mainloop()
