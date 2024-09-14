@@ -4,6 +4,15 @@ from tkinter import messagebox
 from PIL import Image,ImageTk
 import ttkbootstrap
 
+def get_weather(city):
+    API_key ="32e39786cf0534a500018a5da36cb943"
+    url = f"https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API_key}"
+    res = requests.get(url)
+
+    if res.status_code == 404:
+        messagebox.showerror("Error", "City not found") 
+        return None
+
 def search():
     city = city_entry.get()
     result = get_weather(city)
