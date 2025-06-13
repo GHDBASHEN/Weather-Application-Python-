@@ -20,7 +20,7 @@ A simple and elegant weather application built with Python using the `tkinter` a
 ## Setup & Installation
 1. Clone the repository:
     ```bash
-    git clone https://github.com/your-username/weather-application.git
+    git clone https://github.com/GHDBASHEN/weather-application.git
     ```
 2. Navigate to the project directory:
     ```bash
